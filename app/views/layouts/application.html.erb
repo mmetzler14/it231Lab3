@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Quotes</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body class="w3-container w3-light-blue">
+    <a href="/static_pages/home" class="w3-button w3-red"> Home, Where the Heart Is  </a>
+    <a href="/" class="w3-button w3-red"> Mighty Quotes</a>
+    <a href="/static_pages/help" class="w3-button w3-red"> Almighty Help  </a>
+    <a href="/static_pages/about" class="w3-button w3-red"> Come About  </a>
+    <%= yield %>
+  </body>
+</html>
